@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Gotham-Regular'; }
+
+a {
+  text-decoration: none;
+  display: inline-block; }
+
+@font-face {
+  font-family: 'Gotham-Regular';
+  src: url("font/GothamPro.woff"); }
+@font-face {
+  font-family: 'Gotham-Bold';
+  src: url("font/GothamPro-Bold.woff"); }
+
+/*# sourceMappingURL=nullstyle.css.map */
