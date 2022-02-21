@@ -1,4 +1,4 @@
-var x, i, j, l, ll, selElmnt, a, b, c;
+let x, i, j, l, ll, selElmnt, a, b, c;
 /* Найдите любые элементы с классом custom-select: */
 
 x = document.getElementsByClassName("custom-select"); //блок в котором лежит вся форма селект
