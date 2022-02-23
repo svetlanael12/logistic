@@ -503,9 +503,9 @@
     fill: rgba(0, 0, 0, 0);
   }
   .slogan {
-    width: 90%;
-    min-width: 320px;
     max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.2rem;
@@ -516,6 +516,8 @@
     line-height: 1.1;
     color: #fff;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .calculation {
     width: 100%;

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,MAAM,EAAE,SAAS,EAAE,KAAK;EACxB,AAAA,eAAe,CAAC;IACZ,UAAU,EAAE,IAAI;IAChB,aAAa,EAAE,IAAI;GACrB",
+    "sources": [
+        "block-provider(carousel).scss"
+    ],
+    "names": [],
+    "file": "block-provider(carousel).css"
+}

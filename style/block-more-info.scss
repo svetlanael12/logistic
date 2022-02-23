@@ -1,0 +1,154 @@
+$bcg-orange: #FF6B00;
+$mrg: 10px;
+
+.more-info {
+    background: rgba(58, 57, 74, 0.06);
+}
+
+.more-infoBlock {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 87px;
+    padding-bottom: 130px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informations-block {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informations {
+    width: 53%;
+}
+
+.informations__title {
+    color: #272639;
+    font-size: 2.62rem;
+    font-family: 'Gotham-Bold';
+    line-height: 1.3;
+    margin-top: 1em;
+    text-transform: uppercase;
+}
+
+.informations__list {
+    color: #272639;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+.list {
+    list-style-position: inside;
+}
+
+.list__item:nth-child(n+1) {
+    margin-top: 20px;
+}
+
+.list__item_bold {
+    font-family: 'Gotham-Bold';
+}
+
+.payment-button {
+    width: 40%;
+    height: 66px;
+    margin-top: 1.5em;
+
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Gotham-Bold';
+    color: #fff;
+    font-weight: 900;
+    background-color: $bcg-orange;
+
+    cursor: pointer;
+}
+
+.more-info__image_desk  {
+    max-width: 488px;
+    margin-left: $mrg;
+    margin-right: $mrg;
+}
+
+.more-info__img_desk {
+    border-radius: 12px;
+    width: 100%;
+  
+} 
+
+.more-info__image_mobile, .more-info__img_mobile{
+    display: none;
+}
+
+@media (min-width: 960px) and (max-width:1250px){
+    .block-info {
+        margin-left: $mrg;
+        margin-right: $mrg;
+    }
+
+    .more-info__img {
+        margin-right: $mrg;
+    }
+
+    .informations {
+        margin-left: $mrg;
+    }
+}
+
+
+@media (max-width: 960px) {
+    .more-infoBlock {
+        width: 100%;
+        padding-top: 48px;
+    }
+
+    .informations  {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .informations__title {
+        width: 90%;
+        font-size: 2rem;
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .more-info__image_desk, .more-info__img_desk {
+        display: none;
+    } 
+
+    .more-info__image_mobile{
+        display: flex;
+       max-width: 488px;
+        margin-top: 25px;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    .more-info__img_mobile{
+        display: block;
+        border-radius: 12px;
+        width: 100%;
+        margin-left: $mrg;
+        margin-right: $mrg;
+    }
+
+    .informations__list {
+        margin-left: $mrg;
+        margin-right: $mrg;
+    }
+
+    .payment-button {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

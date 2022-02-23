@@ -596,9 +596,9 @@ a {
     fill: rgba(0, 0, 0, 0);
   }
   .slogan {
-    width: 90%;
-    min-width: 320px;
     max-width: 600px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2.2rem;
@@ -609,6 +609,8 @@ a {
     line-height: 1.1;
     color: #fff;
     text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .calculation {
     width: 100%;
@@ -766,7 +768,17 @@ a {
   margin-left: auto;
   margin-right: auto;
   padding-top: 87px;
-  padding-bottom: 89px;
+  padding-bottom: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.informations-block {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -820,10 +832,83 @@ a {
   cursor: pointer;
 }
 
-.more-info__img {
+.more-info__image_desk {
+  max-width: 488px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.more-info__img_desk {
   border-radius: 12px;
-  width: 40.6%;
-  height: 116.39%;
+  width: 100%;
+}
+
+.more-info__image_mobile, .more-info__img_mobile {
+  display: none;
+}
+
+@media (min-width: 960px) and (max-width: 1250px) {
+  .block-info {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .more-info__img {
+    margin-right: 10px;
+  }
+  .informations {
+    margin-left: 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .more-infoBlock {
+    width: 100%;
+    padding-top: 48px;
+  }
+  .informations {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .informations__title {
+    width: 90%;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .more-info__image_desk, .more-info__img_desk {
+    display: none;
+  }
+  .more-info__image_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 488px;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .more-info__img_mobile {
+    display: block;
+    border-radius: 12px;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .informations__list {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .payment-button {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .block-provider {
@@ -832,7 +917,7 @@ a {
 }
 
 .block-provider__title {
-  font-family: 'Gotham-Bold';
+  font-family: "Gotham-Bold";
   font-size: 2.635rem;
   text-align: center;
   text-transform: uppercase;
@@ -849,13 +934,15 @@ a {
   display: -ms-flexbox;
   display: flex;
   max-width: 1030px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
-  overflow: hidden;
 }
 
 .carousel {
@@ -873,6 +960,25 @@ a {
           align-items: center;
 }
 
+.slide {
+  width: 92px;
+  margin-right: 5px;
+}
+
+.slide img {
+  width: 92px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
 .next {
   width: 56px;
   height: 56px;
@@ -885,24 +991,34 @@ a {
 }
 
 .next:hover {
-  background-color: #3A394A;
+  background-color: #3a394a;
   cursor: pointer;
 }
 
 @media (min-width: 960px) and (max-width: 1250px) {
-  .block-info {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  .more-info__img {
-    margin-right: 10px;
-  }
-  .informations {
-    margin-left: 10px;
-  }
   .block-provider {
     margin-left: 10px;
     margin-right: 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .block-provider {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .block-provider__title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 650px) {
+  .block-provider__title {
+    font-size: 1.6rem;
+  }
+  .carousel {
+    width: 296px;
+    overflow: hidden;
   }
 }
 /*# sourceMappingURL=style.css.map */
