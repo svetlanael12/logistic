@@ -129,6 +129,8 @@ $mrg: 10px;
         display: flex;
        max-width: 488px;
         margin-top: 25px;
+        padding-left: $mrg;
+        padding-right: $mrg;
         margin-left: auto;
         margin-right: auto;
     } 
@@ -137,8 +139,6 @@ $mrg: 10px;
         display: block;
         border-radius: 12px;
         width: 100%;
-        margin-left: $mrg;
-        margin-right: $mrg;
     }
 
     .informations__list {
