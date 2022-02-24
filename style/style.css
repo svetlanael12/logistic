@@ -890,6 +890,8 @@ a {
     display: flex;
     max-width: 488px;
     margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -897,8 +899,6 @@ a {
     display: block;
     border-radius: 12px;
     width: 100%;
-    margin-left: 10px;
-    margin-right: 10px;
   }
   .informations__list {
     margin-left: 10px;
