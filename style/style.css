@@ -1022,4 +1022,96 @@ a {
     overflow: hidden;
   }
 }
+
+.block-transport {
+  width: 100%;
+  position: relative;
+  background-image: url("../img/man_kampagne_tgs_stage_bauverkehr_16x9 1.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.block-transport::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(92.36deg, #212031 48.28%, rgba(33, 32, 49, 0) 97.73%);
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.transport__square-one {
+  position: absolute;
+  top: 50px;
+  right: -550px;
+  width: 600px;
+  height: 600px;
+  background: rgba(255, 107, 0, 0.44);
+  border-radius: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.transport__square-two {
+  position: absolute;
+  top: 50px;
+  right: -600px;
+  width: 600px;
+  height: 600px;
+  background: #FF6B00;
+  border-radius: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.transport {
+  padding-top: 147px;
+  padding-bottom: 147px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.transport__title {
+  max-width: 640px;
+  font-family: 'Gotham-Bold';
+  font-size: 2.625rem;
+  line-height: 1.4;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.transport__paragraph {
+  max-width: 610px;
+  margin-top: 18px;
+  font-size: 1rem;
+  line-height: 1.68;
+  color: #fff;
+}
+
+@media (min-width: 960px) and (max-width: 1250px) {
+  .transport {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 960px) {
+  .transport {
+    padding: 57px 10px 51px;
+    margin: auto;
+  }
+  .transport__title {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
+    line-height: 1;
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
