@@ -59,6 +59,7 @@
 
 .payment-button {
   width: 40%;
+  padding: 5px;
   height: 66px;
   margin-top: 1.5em;
   border: none;

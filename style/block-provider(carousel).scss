@@ -17,7 +17,7 @@
   text-align: center;
 }
 
-.block-carousel {
+.block-provider__carousel {
   display: flex;
   max-width: 1030px;
   justify-content: center;
@@ -27,21 +27,21 @@
   margin-right: auto;
 }
 
-.carousel {
+.provider-carousel {
   display: flex;
   justify-content: space-between;
   width: 960px;
   padding-right: 5px;
   padding-left: 5px;
   align-items: center;
-}
 
-.slide {
-  width: 92px;
-  margin-right: 5px;
-
-  img {
+  .slide {
     width: 92px;
+    margin-right: 5px;
+  
+    img {
+      width: 92px;
+    }
   }
 }
 
@@ -90,7 +90,7 @@
     font-size: 1.6rem;
   }
 
-  .carousel {
+  .provider-carousel {
     width: 296px;
     overflow: hidden;
   }

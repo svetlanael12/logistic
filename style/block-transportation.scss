@@ -62,7 +62,7 @@
 }
 
 .transport__paragraph {
-    max-width: 610px;
+    width: 610px;
     margin-top: 18px;
     font-size: 1rem;
     line-height: 1.68;
@@ -77,9 +77,17 @@
 }
 
 @media (max-width: 960px) {
+    .block-transport::after {
+        background: #2b2a3d;
+    }
+
     .transport {
         padding: 57px 10px 51px;
         margin: auto;
+    }
+
+    .transport__square-one, .transport__square-two {
+        display: none;
     }
 
     .transport__title {
@@ -89,5 +97,17 @@
         font-size: 2rem;
         line-height: 1;
         text-align: center;
+    }
+
+    .transport__paragraph {
+        width: 100%;
+        margin-top: 18px;
+        font-size: 1rem;
+        line-height: 1.68;
+        text-align: center;
+    }
+
+    .transport__btn {
+        width: 100%;
     }
 }
