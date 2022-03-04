@@ -1,0 +1,123 @@
+.block-feedback {
+max-width: 1200px;
+margin: 146px auto 158px;
+}
+
+.block-feedback__title {
+    text-align: center;
+    font-family: 'Gotham-Bold';
+    font-size: 2.625rem;
+    text-transform: uppercase;
+}
+
+.feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 81px;
+}
+
+.prev {
+    width: 56px;
+  height: 56px;
+  background-color: rgba(58, 57, 74, 0.19);
+  background-image: url("../img/slider/left.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 28;
+  border-radius: 3px;
+}
+
+.prev:hover {
+    background-color: #3a394a;
+    cursor: pointer;
+  }
+
+.carousel-feedback-block {
+    width: 675px;
+    margin-left: 25px;
+    margin-right: 25px;
+    overflow: hidden;
+}
+
+.carousel-feedback {
+    width: 2135px;
+    display: flex;
+    transition: all ease 1s;
+}
+
+.feedback-slide {
+    display: flex;
+    width: 310px;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+.feedback-slide:not(:last-child) {
+    margin-right: 55px;
+}
+
+.slide__img {
+    width: 100%;
+    text-align: center;
+
+}
+
+.slide__title {
+    width: 100%;
+    margin-top: 37px;
+text-align: center;
+font-family: 'Gotham-Bold';
+font-size: 1.125rem;
+
+}
+
+.slide__subtitle {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #7D7D90;
+    margin-top: 14px;
+}
+
+.slide__text {
+    width: 100%;
+    margin-top: 14px;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 850px) {
+    .block-feedback {
+        margin: 62px 10px 47px;
+    }
+
+    .block-feedback__title {
+        font-size: 2rem;
+    }
+
+    .carousel-feedback-block {
+        margin: 0 auto;
+        width: 310px;
+        margin-bottom: 24px;
+    }
+
+    .feedback {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-top: 33px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .prev {
+        order: 1;
+        margin-right: 5px;
+    }
+
+    #next-btn-feedback {
+        order: 1;
+    }
+}
