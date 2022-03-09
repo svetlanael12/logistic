@@ -114,7 +114,7 @@
     margin-bottom: 24px;
   }
   .feedback {
-    width: 100%;
+    max-width: 360px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     margin-top: 33px;
