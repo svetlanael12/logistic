@@ -1391,7 +1391,7 @@ a {
 @media (max-width: 960px) {
   .footer {
     padding-top: 49px;
-    padding-bottom: 24px;
+    padding-bottom: 49px;
   }
   .footer-wrap {
     max-width: 960px;
